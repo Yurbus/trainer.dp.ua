@@ -154,17 +154,17 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .hero__section {
 	background: url(../img/main-bg.jpg) no-repeat top / cover;
-	height: 100%;
 }
 .hero__container {
 	display: flex;
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 730px;
+	height: 100%;
 }
 .hero__offer {
 	z-index: 5;
+	padding: 100px 0 40px;
 	.hero-title {
 		font-weight: bold;
 		font-size: 78px;
@@ -172,7 +172,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		line-height: 120%;
-		margin-bottom: 35px;
+		margin-bottom: 10%;
 		span {
 			color: #5D2DE3;
 		}
@@ -181,7 +181,7 @@ body._touch .menu__list > li._active .menu__arrow {
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 130%;
-		margin-bottom: 35px;
+		margin-bottom: 10%;
 		max-width: 368px;
 		margin-left: 20%;
 	}
@@ -281,6 +281,55 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 }
 
+/*----------------- Специализация ------------------*/
+
+.specialization__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 0;
+}
+.specialization__info {
+	flex: 1 0 45%;
+	margin-right: 15px;
+}
+.specialization__title {
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	margin-bottom: 65px;
+}
+.specialization__list {
+	margin-bottom: 65px;
+	li{
+		margin-bottom: 15px;
+		display: flex;
+    align-items: center;
+		img{
+			width: 22px;
+			margin-right: 16px;
+		}
+	}
+}
+.specialization__social {
+	display: flex;
+	a {
+		margin-right: 75px;
+	}
+}
+.specialization__sub-title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 22px;
+}
+.specialization__icon {
+	width: 22px;
+	height: 22px;
+}
+.specialization__images {
+	display: flex;
+}
 
 
 
@@ -292,22 +341,27 @@ body._touch .menu__list > li._active .menu__arrow {
     margin-top: 1%;
 	}
 	.about__title {
-    line-height: 34px;
+    line-height: 28px;
     margin-bottom: 35px;
 	}
 	.about__list {
-    margin-bottom: 32px;
+    margin-bottom: 50px;
+	}
+	.specialization__title {
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 50px;
+	}
+	.specialization__list li {
+    font-size: 17px;
 	}
 }
 @media screen and (max-width: 880px) {
 	.menu__list > li {
 		margin: 0px 0px 0px 10px;
 	 }
-	 .about__list li {
-    font-size: 16px;
-		img {
-			width: 16px;
-		}
+	.about__list li {
+  	font-size: 16px;	
 	}
 	.btn {
 		font-size: 18px;
@@ -423,15 +477,14 @@ body._touch .menu__list > li._active .menu__arrow {
     flex-wrap: wrap;
 	}
 	.about__photo img {
-		padding: 15px 30px;
+		padding: 0px 20px 30px;
 	}
 }
 
 @media screen and (max-width: 580px) {
 	.hero__section {
     background: url(../img/main-bg.jpg) no-repeat top center/cover;
-    height: 100%;
-}
+	}
 	.hero__offer{
 		.hero-title {
 			font-size: 50px;
@@ -452,5 +505,13 @@ body._touch .menu__list > li._active .menu__arrow {
 	.icon-arrow:before {
     margin-left: 10px;
 	}
-
+	.specialization__body {
+		flex-wrap: wrap;
+	}
+	.specialization__images {
+    margin-top: 100px;
+	}
+	.specialization__list {
+    margin-bottom: 35px;
+	}
 }
