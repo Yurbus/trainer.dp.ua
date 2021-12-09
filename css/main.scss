@@ -332,9 +332,161 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 
+/*----------------- Как это работает ------------------*/
+.principles__section {
+	background: url(../img/principles-bg.jpg) no-repeat center / cover;
+	box-shadow:  100vw 0 0  rgba(0, 0, 0, 0.7) inset;
+	padding: 110px 0 75px;
+}
+
+.principles__title {
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	margin-bottom: 65px;
+	text-align: center;
+}
+.principles__body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.principles__item {
+	display: flex;
+	align-items: center;
+	max-width: 380px;
+	margin-bottom: 70px;
+}
+.principles__block-text {
+ margin-left: 20px;
+}
+.principles__icon {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 25px;
+	padding: 35px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid #5D2DE3;
+	background: rgba(93, 45, 227, 0.1);
+	text-align: center;
+	transition: all 0.2s ease 0s;
+	&:hover {
+		background: rgba(93, 45, 227, 0.5);
+
+	}
+}
+.principles__sub-title {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 130%;
+	margin-bottom: 10px;
+}
+.principles__text {
+	font-size: 18px;
+	color: #999;
+	line-height: 25px;
+}
+
+
+/*----------------- Цены на услуги ------------------*/
+
+.price__section {
+	padding: 95px 0;
+}
+.price__title {
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	margin-bottom: 65px;
+}
+.price__body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.price__column {
+	width: 260px;
+	margin: 15px;
+}
+.price__item {
+	padding: 40px 50px;
+	text-align: center;
+	background: rgba(93, 45, 227, 0.1);
+	border: 1px solid #5D2DE3;
+	box-sizing: border-box;
+	border-radius: 15px;
+	height: 100%;
+}
+.item__price {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	margin-bottom: 15px;
+}
+.item__text {
+	font-size: 18px;
+	line-height: 22px;
+	padding-bottom: 29px;
+	color: rgb(209, 209, 209);
+	border-bottom: 1px solid #5D2DE3;
+}
+.item__text_grey {
+	font-size: 14px;
+	line-height: 20px;
+	color: #A4A4A4;
+	margin-bottom: 10px;
+}
+.popup-btn {
+	display: block;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 12px 35px;
+	background: rgba(93, 45, 227, 0.1);
+	border: 1px solid #5D2DE3;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin-top: 55px;
+	transition: all 0.2s ease 0s;
+	&:hover {
+		background: #5D2DE3;
+	}
+}
+.price__quote {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	margin-top: 70px;
+	max-width: 519px;
+}
+.price__autor {
+	font-size: 16px;
+	line-height: 130%;
+	margin-top: 11px;
+	color: #9F9F9F;
+}
+
+
+
+
 
 
 /*----------------- Media query ------------------*/
+@media screen and (max-width: 1190px) {
+	.price__title {
+		text-align: center;
+  }
+	.price__body {
+		justify-content: space-around;
+  }
+  .price__item {
+	padding: 30px;
+	}
+}
 @media screen and (max-width: 992px) {
 	.about__description {
     margin-left: 20px;
@@ -354,6 +506,9 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 	.specialization__list li {
     font-size: 17px;
+	}
+	.principles__item {
+		flex: 1 1 50%;
 	}
 }
 @media screen and (max-width: 880px) {
@@ -513,5 +668,8 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 	.specialization__list {
     margin-bottom: 35px;
+	}
+	.principles__item {
+		flex: 1 1 100%;
 	}
 }
