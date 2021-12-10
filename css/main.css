@@ -609,6 +609,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #9F9F9F;
 }
 
+/*----------------- Контакты ------------------*/
 /*----------------- Media query ------------------*/
 @media screen and (max-width: 1190px) {
   .price__title {

@@ -190,14 +190,35 @@
 				</section>
 		</main>
 		<footer class="footer page__section_5">
-			<h2 class="footer__title">Контакты</h2>
 			<div class="footer__container _container">
 				<div class="footer__body">
+					<h2 class="footer__title">Контакты</h2>
 					<div class="footer__contacts">
-
+						<div class="footer__label">Телефон</div>
+						<div class="footer__phone">+38 93 726 54 17 </div>
+						<div class="footer__label">Соц сети и телеграм</div>
+						<div class="footer__social">
+							<a href="" class="icon-inst"></a>
+							<a href="" class="icon-fb"></a>
+							<a href="" class="icon-telegram"></a>
+						</div>
 					</div>
 					<div class="footer__form">
-						
+						<form action="#" id="form" class="form__body">
+							<h4 class="form__title">Записаться  на тренировку</h4>
+							<div class="form__item">
+								<input type="text" name="name" class="form__input" placeholder="Имя*:" required>
+							</div>
+							<div class="form__item">
+								<input type="tel" name="phone" class="form__input" placeholder="Телефон*:" required>
+							</div>
+							<div class="form__item">
+								<input id="date" type="date" value="2022-01-01">
+							</div>
+							<div class="form__item">
+								<input type="time" name="register" value="07:00" min="07:00" max="21:00" required>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
