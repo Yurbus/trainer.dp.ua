@@ -618,6 +618,8 @@ body._touch .menu__list > li._active .menu__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 60px;
 }
 
@@ -629,7 +631,8 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .footer__contacts {
-  margin-right: 220px;
+  margin-right: 5%;
+  margin-bottom: 50px;
 }
 
 .footer__label {
@@ -639,9 +642,11 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-bottom: 18px;
 }
 
-.footer__phone {
+.footer__phone a {
+  display: block;
   font-size: 20px;
   line-height: 20px;
+  color: #fff;
   margin-bottom: 40px;
 }
 
@@ -659,6 +664,10 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 30px;
+}
+
+.footer__form {
+  max-width: 640px;
 }
 
 .form__wrapper {
@@ -685,6 +694,31 @@ body._touch .menu__list > li._active .menu__arrow {
           box-sizing: border-box;
   border-radius: 30px;
   padding: 18px 31px;
+  width: 280px;
+}
+
+[type="date"] {
+  background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/calendar-date.svg) 87% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+[type="time"] {
+  background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/clock.svg) 87% 50% no-repeat;
+}
+
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 .footer__span {
@@ -693,6 +727,7 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 130%;
   color: #9F9F9F;
   margin-bottom: 30px;
+  max-width: 390px;
 }
 
 .submit {
@@ -724,6 +759,8 @@ body._touch .menu__list > li._active .menu__arrow {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 40px;
   border-top: 1px solid #5D2DE3;
 }
@@ -732,6 +769,10 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 18px;
   line-height: 20px;
   color: #9F9F9F;
+}
+
+.footer__left-text {
+  margin-bottom: 20px;
 }
 
 .footer__right-text a {

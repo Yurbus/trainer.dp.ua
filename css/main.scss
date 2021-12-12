@@ -474,6 +474,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .footer__body {
 	display: flex;
+	flex-wrap: wrap;
 	padding-bottom: 60px;
 }
 .footer__title {
@@ -483,7 +484,8 @@ body._touch .menu__list > li._active .menu__arrow {
 	margin-bottom: 65px;
 }
 .footer__contacts {
-	margin-right: 220px;
+	margin-right: 5%;
+	margin-bottom: 50px;
 }
 .footer__label {
 	font-size: 20px;
@@ -491,9 +493,11 @@ body._touch .menu__list > li._active .menu__arrow {
 	color: #9F9F9F;
 	margin-bottom: 18px;
 }
-.footer__phone {
+.footer__phone a {
+	display: block;
 	font-size: 20px;
 	line-height: 20px;
+	color: #fff;
 	margin-bottom: 40px;
 }
 .footer__social {
@@ -502,14 +506,13 @@ body._touch .menu__list > li._active .menu__arrow {
 .icon-social {
 	margin-right: 30px;
 }
-.footer__form {
-}
-.form__body {
-}
 .form__title {
 	font-size: 22px;
 	line-height: 27px;
 	margin-bottom: 30px;
+}
+.footer__form {
+	max-width: 640px;
 }
 .form__wrapper {
  display: flex;
@@ -518,7 +521,6 @@ body._touch .menu__list > li._active .menu__arrow {
 .form__item {
 	margin-right: 35px;
 	margin-bottom: 30px;
-	
 }
 .form__input {
 	display: block;
@@ -530,6 +532,25 @@ body._touch .menu__list > li._active .menu__arrow {
 	box-sizing: border-box;
 	border-radius: 30px;
 	padding: 18px 31px;
+	width: 280px;
+}
+[type="date"] {
+	background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/calendar-date.svg) 87% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[type="time"] {
+	background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/clock.svg) 87% 50% no-repeat;
+}
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 .footer__span {
 	display: block;
@@ -537,6 +558,7 @@ body._touch .menu__list > li._active .menu__arrow {
 	line-height: 130%;
 	color: #9F9F9F;
 	margin-bottom: 30px;
+	max-width: 390px;
 }
 .submit {
 	display: inline-block;
@@ -555,12 +577,10 @@ body._touch .menu__list > li._active .menu__arrow {
 			box-shadow: 0px 3px 15px rgba(93, 45, 227, 0.3);
 		}
 }
-.footer__copyright {
-	
-}
 .copyright__footer {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 40px;
 	border-top: 1px solid #5D2DE3;
 }
@@ -568,6 +588,9 @@ body._touch .menu__list > li._active .menu__arrow {
 	font-size: 18px;
 	line-height: 20px;
 	color: #9F9F9F;
+}
+.footer__left-text {
+	margin-bottom: 20px;
 }
 .footer__right-text a {
 	font-size: 18px;
