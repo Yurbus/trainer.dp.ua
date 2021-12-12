@@ -191,34 +191,60 @@
 		</main>
 		<footer class="footer page__section_5">
 			<div class="footer__container _container">
+				<h2 class="footer__title">Контакты</h2>
 				<div class="footer__body">
-					<h2 class="footer__title">Контакты</h2>
 					<div class="footer__contacts">
 						<div class="footer__label">Телефон</div>
 						<div class="footer__phone">+38 93 726 54 17 </div>
 						<div class="footer__label">Соц сети и телеграм</div>
 						<div class="footer__social">
-							<a href="" class="icon-inst"></a>
-							<a href="" class="icon-fb"></a>
-							<a href="" class="icon-telegram"></a>
+							<a href="" class="icon-social icon-inst"></a>
+							<a href="" class="icon-social icon-fb"></a>
+							<a href="" class="icon-social icon-telegram"></a>
 						</div>
 					</div>
 					<div class="footer__form">
 						<form action="#" id="form" class="form__body">
 							<h4 class="form__title">Записаться  на тренировку</h4>
-							<div class="form__item">
-								<input type="text" name="name" class="form__input" placeholder="Имя*:" required>
+							<div class="form__wrapper">
+								<div class="form__item">
+									<input type="text" name="name" class="form__input" placeholder="Имя*:" required>
+								</div>
+								<div class="form__item">
+									<input type="tel" name="phone" class="form__input" placeholder="Телефон*:" required>
+								</div>
+								<div class="form__item">
+									<!-- <label for="date">Выбрать дату</label> -->
+									<input id="date" type="date" class="date-time form__input" value="2022-01-01">
+									<style>
+										::-webkit-datetime-edit { padding: 0px 18px;  }
+										::-webkit-datetime-edit-fields-wrapper {  }
+										::-webkit-datetime-edit-text { color: #f9f9f9; }
+										::-webkit-datetime-edit-month-field { color: #f9f9f9; }
+										::-webkit-datetime-edit-day-field { color: #f9f9f9; }
+										::-webkit-datetime-edit-year-field { color: #f9f9f9; }
+										::-webkit-inner-spin-button { display: none; }
+										::-webkit-calendar-picker-indicator { background: url(../img/arrow-down.svg)no-repeat; }
+									</style>
+									
+								</div>
+								<div class="form__item">
+									<!-- <label for="time">Выбрать время</label> -->
+									<input id="time" type="time" name="time" class="date-time form__input" value="07:00" min="07:00" max="21:00" required>
+								</div>
 							</div>
-							<div class="form__item">
-								<input type="tel" name="phone" class="form__input" placeholder="Телефон*:" required>
-							</div>
-							<div class="form__item">
-								<input id="date" type="date" value="2022-01-01">
-							</div>
-							<div class="form__item">
-								<input type="time" name="register" value="07:00" min="07:00" max="21:00" required>
-							</div>
+							<span class="footer__span">Записываясь на тренировку, Вы вибираете желаемую<br>
+								дату и время тренироки</span>
+							<button class="submit">Отправить</button>
 						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<div class="footer__container _container">
+					<div class="copyright__footer">
+						<div class="footer__left-text">© 2021. Все права защищены</div>
+						<div class="footer__right-text">Разработал: <a href="#">Юрий Писаренко</a></div>
 					</div>
 				</div>
 			</div>
