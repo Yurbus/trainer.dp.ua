@@ -38,37 +38,37 @@
   content: "\e901";
   color: #5d2de3;
   border: 2px solid #5d2de3;
-  font-size: 30px;
+  font-size: 24px;
   display: block;
-  width: 66px;
-  height: 66px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   text-align: center;
-  line-height: 66px;
+  line-height: 56px;
 }
 .icon-inst:before {
   content: "\e902";
   color: #5d2de3;
   border: 2px solid #5d2de3;
-  font-size: 30px;
+  font-size: 24px;
   display: block;
-  width: 66px;
-  height: 66px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   text-align: center;
-  line-height: 66px;
+  line-height: 56px;
 }
 .icon-telegram:before {
   content: "\e903";
   color: #5d2de3;
   border: 2px solid #5d2de3;
-  font-size: 30px;
+  font-size: 24px;
   display: block;
-  width: 66px;
-  height: 66px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   text-align: center;
-  line-height: 66px;
+  line-height: 56px;
 }
 .icon-fb:hover:before,
 .icon-inst:hover:before,

@@ -513,7 +513,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*----------------- Цены на услуги ------------------*/
 .price__section {
-  padding: 95px 0;
+  padding: 80px 0;
 }
 
 .price__title {
@@ -631,7 +631,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .footer__contacts {
-  margin-right: 5%;
+  margin-right: 12%;
   margin-bottom: 50px;
 }
 
@@ -656,7 +656,7 @@ body._touch .menu__list > li._active .menu__arrow {
   display: flex;
 }
 
-.icon-social {
+.icon-social:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -667,7 +667,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .footer__form {
-  max-width: 640px;
+  max-width: 800px;
 }
 
 .form__wrapper {
@@ -684,17 +684,15 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .form__input {
-  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #9F9F9F;
+  text-align: center;
   background: rgba(93, 45, 227, 0.05);
   border: 1px solid #5D2DE3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 30px;
   padding: 18px 31px;
-  width: 280px;
+  width: 310px;
 }
 
 [type="date"] {
@@ -771,10 +769,6 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #9F9F9F;
 }
 
-.footer__left-text {
-  margin-bottom: 20px;
-}
-
 .footer__right-text a {
   font-size: 18px;
   line-height: 20px;
@@ -788,7 +782,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #5D2DE3;
 }
 
-/*----------------- Media query ------------------*/
+/*------------------------------ Media query ------------------------------------------*/
 @media screen and (max-width: 1190px) {
   .price__title {
     text-align: center;
@@ -978,6 +972,9 @@ body._touch .menu__list > li._active .menu__arrow {
   .hero__section {
     background: url(../img/main-bg.jpg) no-repeat top center/cover;
   }
+  .hero__offer {
+    padding: 40px 0 40px;
+  }
   .hero__offer .hero-title {
     font-size: 50px;
   }
@@ -986,8 +983,8 @@ body._touch .menu__list > li._active .menu__arrow {
   }
   .hero__offer .btn {
     margin-left: 0;
-    font-size: 18px;
-    padding: 20px 32px;
+    font-size: 16px;
+    padding: 17px 32px;
   }
   .hero__social {
     position: relative;
@@ -1012,6 +1009,23 @@ body._touch .menu__list > li._active .menu__arrow {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+  .footer {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .form__item {
+    margin: 0 auto 30px;
+  }
+  .footer__form {
+    text-align: center;
+  }
+  .footer__contacts {
+    margin-right: 0;
+    margin: 0 auto 50px;
+  }
+  .footer__left-text {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
