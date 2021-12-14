@@ -236,6 +236,27 @@
 				</div>
 			</div>
 		</footer>
+		<!---------------- Модальные формы ---------------------------->
+		<form action="#" id="form" class="top-form__body">
+			<h4 class="top-form__title">Записаться  на тренировку</h4>
+			<div class="top-form__wrapper">
+				<div class="top-form__item">
+					<input type="text" name="name" class="top-form__input input-form" placeholder="Имя*:" required>
+				</div>
+				<div class="top-form__item">
+					<input type="tel" name="phone" class="top-form__input input-form" placeholder="Телефон*:" required>
+				</div>
+				<div class="top-form__item">
+					<input id="date" type="date" class="date-time top-form__input" value="2022-01-01">	
+				</div>
+				<div class="top-form__item">
+					<input id="time" type="time" name="time" class="date-time top-form__input" value="07:00" min="07:00" max="21:00" required>
+				</div>
+			</div>
+			<span class="top-form__span">Записываясь на тренировку, Вы вибираете желаемую
+				дату и время тренироки</span>
+			<button class="top-submit">Отправить</button>
+		</form>
 	</div>
 
    <script src="js/main.js"></script>

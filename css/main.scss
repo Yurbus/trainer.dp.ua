@@ -599,8 +599,86 @@ body._touch .menu__list > li._active .menu__arrow {
 	}
 }
 
-
-
+/*----------------------------- Модальные формы ---------------------------------------*/
+.wrapper {
+	position: relative;
+}
+.top-form__body {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	max-width: 450px;
+	background: rgb(11, 2, 36);
+	padding: 46px;
+	z-index: 5;
+	text-align: center;
+	margin-left: -225px;
+}
+.top-form__title {
+	font-size: 22px;
+	line-height: 27px;
+	margin-bottom: 30px;
+}
+.top-form__wrapper {
+ display: flex;
+ flex-direction: column;
+}
+.top-form__item {
+	margin-bottom: 30px;
+}
+.top-form__input {
+	font-size: 16px;
+	line-height: 20px;
+	color: #9F9F9F;
+	text-align: center;
+	background: rgba(93, 45, 227, 0.05);
+	border: 1px solid #5D2DE3;
+	border-radius: 30px;
+	padding: 18px 31px;
+	width: 310px;
+}
+[type="date"] {
+	background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/calendar-date.svg) 87% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+[type="time"] {
+	background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/clock.svg) 87% 50% no-repeat;
+}
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.top-form__span {
+	display: block;
+	font-size: 14px;
+	line-height: 130%;
+	color: #9F9F9F;
+	margin-bottom: 30px;
+	max-width: 390px;
+}
+.top-submit {
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: linear-gradient(137deg, rgb(74, 41, 165) 0%, rgba(98,52,227,1) 100%);
+	border: 1px solid #6234E3;
+	box-sizing: border-box;
+	border-radius: 30px;
+	padding: 17px 98px;
+	transition: all 0.2s ease 0s;
+		&:hover {
+			background: linear-gradient(137deg, rgb(64, 35, 145) 0%, rgb(87, 46, 201) 100%);
+			box-shadow: 0px 3px 15px rgba(93, 45, 227, 0.3);
+		}
+}
 
 
 /*------------------------------ Media query ------------------------------------------*/

@@ -782,6 +782,109 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #5D2DE3;
 }
 
+/*----------------------------- Модальные формы ---------------------------------------*/
+.wrapper {
+  position: relative;
+}
+
+.top-form__body {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  max-width: 450px;
+  background: #0b0224;
+  padding: 46px;
+  z-index: 5;
+  text-align: center;
+  margin-left: -225px;
+}
+
+.top-form__title {
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.top-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-form__item {
+  margin-bottom: 30px;
+}
+
+.top-form__input {
+  font-size: 16px;
+  line-height: 20px;
+  color: #9F9F9F;
+  text-align: center;
+  background: rgba(93, 45, 227, 0.05);
+  border: 1px solid #5D2DE3;
+  border-radius: 30px;
+  padding: 18px 31px;
+  width: 310px;
+}
+
+[type="date"] {
+  background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/calendar-date.svg) 87% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+[type="time"] {
+  background: rgba(93, 45, 227, 0.05) url(../img/svg_icons/clock.svg) 87% 50% no-repeat;
+}
+
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.top-form__span {
+  display: block;
+  font-size: 14px;
+  line-height: 130%;
+  color: #9F9F9F;
+  margin-bottom: 30px;
+  max-width: 390px;
+}
+
+.top-submit {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(137deg, #4a29a5 0%, #6234e3 100%);
+  border: 1px solid #6234E3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  padding: 17px 98px;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.top-submit:hover {
+  background: linear-gradient(137deg, #402391 0%, #572ec9 100%);
+  -webkit-box-shadow: 0px 3px 15px rgba(93, 45, 227, 0.3);
+          box-shadow: 0px 3px 15px rgba(93, 45, 227, 0.3);
+}
+
 /*------------------------------ Media query ------------------------------------------*/
 @media screen and (max-width: 1190px) {
   .price__title {
