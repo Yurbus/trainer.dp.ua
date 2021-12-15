@@ -39,7 +39,7 @@ body {
   font-weight: 400;
 }
 
-body._lock {
+body.lock {
   overflow: hidden;
 }
 
@@ -513,7 +513,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 /*----------------- Цены на услуги ------------------*/
 .price__section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .price__title {
@@ -782,21 +782,72 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #5D2DE3;
 }
 
-/*----------------------------- Модальные формы ---------------------------------------*/
-.wrapper {
+/*===================================== Модальные формы ============================================*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000070;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__content {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup__content {
+  max-width: 450px;
   position: relative;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0px);
+          transform: translate(-100%, 0px);
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .top-form__body {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  max-width: 450px;
-  background: #0b0224;
-  padding: 46px;
-  z-index: 5;
+  border: 1px solid #6234E3;
+  background: -webkit-gradient(linear, right top, left top, from(#000000), to(#00011E));
+  background: linear-gradient(270deg, #000000 0%, #00011E 100%);
   text-align: center;
-  margin-left: -225px;
+  padding: 30px;
 }
 
 .top-form__title {
@@ -861,7 +912,7 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 130%;
   color: #9F9F9F;
   margin-bottom: 30px;
-  max-width: 390px;
+  max-width: 340px;
 }
 
 .top-submit {
@@ -875,8 +926,6 @@ body._touch .menu__list > li._active .menu__arrow {
           box-sizing: border-box;
   border-radius: 30px;
   padding: 17px 98px;
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
 }
 
 .top-submit:hover {
@@ -1113,6 +1162,12 @@ body._touch .menu__list > li._active .menu__arrow {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
   }
+  .price__wrapper {
+    text-align: center;
+  }
+  .price__wrapper .price__quote {
+    padding: 0 5px;
+  }
   .footer {
     margin: 0 auto;
     text-align: center;
@@ -1128,6 +1183,27 @@ body._touch .menu__list > li._active .menu__arrow {
     margin: 0 auto 50px;
   }
   .footer__left-text {
+    margin-bottom: 20px;
+  }
+  .copyright__footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup__content {
+    margin-top: 80px;
+  }
+  .top-form__body {
+    padding: 30px 20px;
+  }
+  .top-form__input {
+    padding: 15px;
+    width: 300px;
+  }
+  .top-form__item {
     margin-bottom: 20px;
   }
 }

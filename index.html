@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Персональный тренер Эвгений Писаренко</title>
+	 	<link rel="stylesheet" href="css/aos.css">
 		<link rel="stylesheet" href="css/iconsfont.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="font/stylesheet.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header id="header" class="header lock_padding">
 			<div class="header__container _container">
 				<div class="header__mobile">
 					<a href="tel:+38937265417">+38 93 726 54 17 </a>
@@ -38,10 +39,10 @@
 					<div class="gradient"></div>
 				 <div class="hero__container _container">
 					 <div class="hero__offer">
-						<h1 class="hero-title">Только <span>научный</span> <br> подход</h1>
-						<p class="text">Помогу дойти до цели и изменить ваше представление о тренировках </p>
-						<a href="#" class="btn">Тренироваться <span class="icon-arrow"></span></a>
-						<div class="hero__social">
+						<h1 data-aos="fade-up" data-aos-delay="200" class="hero-title">Только <span>научный</span> <br> подход</h1>
+						<p  data-aos="fade-up" data-aos-delay="400" class="text">Помогу дойти до цели и изменить ваше представление о тренировках </p>
+						<a  data-aos="fade-up" data-aos-delay="600" href="#popup" class="btn popup-link">Тренироваться <span class="icon-arrow"></span></a>
+						<div data-aos="fade-up" data-aos-delay="800" class="hero__social">
 							<a href="" class="icon-inst"></a>
 							<a href="" class="icon-fb"></a>
 							<a href="" class="icon-telegram"></a>
@@ -66,7 +67,7 @@
 									<li><img src="img/svg_icons/arrow-list.svg" alt="icon">Призер всеукраинских соревнований по пауэрлифтингу </li>
 									<li><img src="img/svg_icons/arrow-list.svg" alt="icon">Тренерский опыт более 10 лет </li>
 								</ul>
-								<a href="#" class="btn">Записаться</a>
+								<a href="#popup" class="btn popup-link">Записаться</a>
 							</div>
 						</div>
 					</div>
@@ -157,21 +158,21 @@
 									<div class="price__item item">
 										<div class="item__price">500 грн</div>
 										<div class="item__text">Персональная тренировка</div>
-										<a href="#" class="popup-btn">Записаться</a>
+										<a href="#popup_2" class="popup-btn popup-link">Записаться</a>
 									</div>
 								</div>
 								<div class="price__column">
 									<div class="price__item item">
 										<div class="item__price">1000 грн</div>
 										<div class="item__text">Составление тренировочного плана</div>
-										<a href="#" class="popup-btn">Записаться</a>
+										<a href="#popup_2" class="popup-btn popup-link">Записаться</a>
 									</div>
 								</div>
 								<div class="price__column">
 									<div class="price__item item">
 										<div class="item__price">1000 грн</div>
 										<div class="item__text">Составление рациона</div>
-										<a href="#" class="popup-btn">Записаться</a>
+										<a href="#popup_2" class="popup-btn popup-link">Записаться</a>
 									</div>
 								</div>
 								<div class="price__column">
@@ -179,7 +180,7 @@
 										<div class="item__price">3000 грн</div>
 										<div class="item__text_grey">(1 месяц)</div>
 										<div class="item__text">Онлайн ведение</div>
-										<a href="#" class="popup-btn">Записаться</a>
+										<a href="#popup_2" class="popup-btn popup-link">Записаться</a>
 									</div>
 								</div>
 							</div>
@@ -237,28 +238,71 @@
 			</div>
 		</footer>
 		<!---------------- Модальные формы ---------------------------->
-		<form action="#" id="form" class="top-form__body">
-			<h4 class="top-form__title">Записаться  на тренировку</h4>
-			<div class="top-form__wrapper">
-				<div class="top-form__item">
-					<input type="text" name="name" class="top-form__input input-form" placeholder="Имя*:" required>
-				</div>
-				<div class="top-form__item">
-					<input type="tel" name="phone" class="top-form__input input-form" placeholder="Телефон*:" required>
-				</div>
-				<div class="top-form__item">
-					<input id="date" type="date" class="date-time top-form__input" value="2022-01-01">	
-				</div>
-				<div class="top-form__item">
-					<input id="time" type="time" name="time" class="date-time top-form__input" value="07:00" min="07:00" max="21:00" required>
+		<div id="popup" class="popup"><!-- Popup -->
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close close-popup"><img src="img/svg_icons/close.svg" alt="close"></a>
+					<form action="#" id="form" class="top-form__body">
+						<h4 class="top-form__title">Записаться  на тренировку</h4>
+						<div class="top-form__wrapper">
+							<div class="top-form__item">
+								<input type="text" name="name" class="top-form__input input-form" placeholder="Имя*:" required>
+							</div>
+							<div class="top-form__item">
+								<input type="tel" name="phone" class="top-form__input input-form" placeholder="Телефон*:" required>
+							</div>
+							<div class="top-form__item">
+								<input id="date" type="date" class="date-time top-form__input" value="2022-01-01">	
+							</div>
+							<div class="top-form__item">
+								<input id="time" type="time" name="time" class="date-time top-form__input" value="07:00" min="07:00" max="21:00" required>
+							</div>
+						</div>
+						<span class="top-form__span">Записываясь на тренировку, Вы вибираете желаемую
+							дату и время тренироки</span>
+						<button class="top-submit">Отправить</button>
+					</form>
 				</div>
 			</div>
-			<span class="top-form__span">Записываясь на тренировку, Вы вибираете желаемую
-				дату и время тренироки</span>
-			<button class="top-submit">Отправить</button>
-		</form>
+		</div><!-- End popup -->
+		<div id="popup_2" class="popup"><!-- Popup_2 -->
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close close-popup"><img src="img/svg_icons/close.svg" alt="close"></a>
+					<form action="#" id="form__gym" class="top-form__body">
+						<h4 class="top-form__title">Записаться  на тренировку</h4>
+						<div class="top-form__wrapper">
+							<div class="top-form__item">
+								<input type="text" name="name" class="top-form__input input-form" placeholder="Имя*:" required>
+							</div>
+							<div class="top-form__item">
+								<input type="tel" name="phone" class="top-form__input input-form" placeholder="Телефон*:" required>
+							</div>
+							<span class="top-form__span">Обязательно нужно указать вид тренировки</span>
+							<div class="top-form__item">
+								<input class="top-form__input input-form" list="gym" placeholder="Выбрать тренировку">
+								<datalist id="gym">
+									<option>Персональная тренировка</option>
+									<option>Тренировочный план</option>
+									<option>Рацион</option>
+									<option>Онлайн ведение</option>
+								</datalist>	
+							</div>
+						</div>
+						<span class="top-form__span">Обязательно нужно указать вид тренировки</span>
+						<button class="top-submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div><!-- End popup -->
 	</div>
 
+	<script src="js/popups.js"></script>
    <script src="js/main.js"></script>
+	<script src="js/aos.js"></script>
+	<script>
+	// Анимация контента
+		AOS.init();
+	</script>
 </body>
 </html>
