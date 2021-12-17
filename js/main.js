@@ -64,3 +64,16 @@ if(menuLinks.length > 0) {
 	}
 }
 
+$('#form').submit(function(){
+	$.ajax({
+		type:"POST",
+		url: "mail.php",
+		data: $(this).serialize()
+	}).done(function() {
+	alert("Спасибо что обратились ко мне!");
+	setTimeout(function() {
+		$.magnificPopup.close();
+	}, 1000);
+	});
+	return false;
+});
